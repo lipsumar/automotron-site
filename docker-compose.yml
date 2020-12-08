@@ -9,3 +9,14 @@ services:
     volumes:
       - ./out:/srv
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    labels:
+      - "traefik.http.routers.automotron-site.rule=Host(`automotron.io`)"
+      - "traefik.http.routers.automotron-site.tls.certresolver=le"
+      - "traefik.http.routers.automotron-site.entrypoints=websecure"
+      - "traefik.docker.network=traefik-external"
+    networks:
+      - traefik-external
+
+networks:
+  traefik-external:
+    external: true
