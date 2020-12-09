@@ -1,12 +1,19 @@
-import Head from "next/head";
+import Layout from "../../components/Layout";
+import { getGuides } from "../../utils";
 
-export default function Home() {
+export default function Home({ guides }) {
   return (
-    <div>
-      <Head>
-        <title>doc</title>
-      </Head>
-      <h1>DOC!</h1>
-    </div>
+    <Layout title="Documentation" guides={guides}>
+      index de la doc
+    </Layout>
   );
+}
+
+export async function getStaticProps(ctx) {
+  const guides = getGuides();
+  return {
+    props: {
+      guides: guides,
+    },
+  };
 }

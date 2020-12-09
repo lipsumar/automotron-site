@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port=4000",
+    "watch": "next dev --port=4000",
     "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
+    "front-matter": "^4.0.2",
+    "marked": "^1.2.5",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
