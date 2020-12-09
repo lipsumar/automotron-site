@@ -1,0 +1,15 @@
+.btn{
+  background-color: transparent;
+  border:1px solid var(--secondary);
+  border-radius: 3px;
+  color:var(--secondary);
+  font-size:1rem;
+  padding:0.4em 0.6em;
+  display: inline;
+}
+
+.btn-accent{
+  background-color: var(--accent);
+  color:white;
+  border-color: var(--accent);
+}

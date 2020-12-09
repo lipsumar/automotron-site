@@ -1,0 +1,38 @@
+.home-header{
+  background-color:var(--primary-dark);
+}
+
+
+.home-header-top{
+  padding-top:1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;;
+}
+
+.home-header-top__logo{
+  color:var(--secondary);
+  font-size:40px;
+}
+
+.home-header-top__nav{
+  display: flex;
+}
+.home-header-top__nav-item{
+  padding:0 0.5em;
+}
+.home-header-top__nav-item a{
+  color:var(--secondary);
+}
+.home-header-top__nav-item--btn .btn{
+  margin-top:-3px;
+}
+
+
+
+.home-header-body{
+  padding:200px 0;
+  color:white;
+  font-size:2em;
+  text-align: center;
+}

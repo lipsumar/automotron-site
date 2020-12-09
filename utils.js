@@ -10,11 +10,11 @@ export function getGuides() {
 
   return guideFiles.map((file) => {
     const filepath = path.join(guidesDir, file);
-    return getGuideByFilepath(filepath);
+    return getPageByFilepath(filepath);
   });
 }
 
-function getGuideByFilepath(filepath) {
+function getPageByFilepath(filepath) {
   const md = fs.readFileSync(filepath).toString();
   const parsed = fm(md);
   return {
@@ -26,5 +26,9 @@ function getGuideByFilepath(filepath) {
 }
 
 export function getGuideBySlug(slug) {
-  return getGuideByFilepath(path.join(guidesDir, `${slug}.md`));
+  return getPageByFilepath(path.join(guidesDir, `${slug}.md`));
+}
+
+export function getPage(slugpath) {
+  return getPageByFilepath(path.join(contentDir, `${slugpath}.md`));
 }
