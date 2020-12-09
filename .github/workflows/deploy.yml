@@ -23,7 +23,7 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           source: out/
-          target: automotron-site/out/
+          target: automotron-site/
       - uses: appleboy/ssh-action@master
         name: Deploy via SSH
         with:
