@@ -5,7 +5,7 @@ services:
     image: nginx:alpine
     restart: always
     volumes:
-      - ./out:/srv
+      - ./out/out:/srv
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
     labels:
       - "traefik.http.routers.automotron-site.rule=Host(`automotron.io`)"
