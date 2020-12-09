@@ -12,11 +12,17 @@ body {
   box-sizing: border-box;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 
 @import './variables.css';
 @import './doc-theme.css';
 @import './container.css';
-
+@import './grid.css';
+@import './cards.css';
 
 
 

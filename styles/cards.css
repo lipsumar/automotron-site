@@ -1,0 +1,31 @@
+.generator-card{
+  border-radius: 5px;
+  overflow: hidden;
+  border:1px solid #d7e2ee;
+  text-decoration: none;
+  position: relative;
+}
+
+.generator-card__delete{
+  color:#fff;
+  position: absolute;
+  top:2px;
+  right:2px;
+  display: none;
+}
+.generator-card:hover .generator-card__delete{
+  display: block;
+  opacity: 0.7;
+
+}
+.generator-card:hover .generator-card__delete:hover{opacity: 1;}
+
+.generator-card__image{
+  background-color: #bad5ef;
+}
+
+.generator-card__title{
+  padding: 20px;
+  color:initial;
+  font-size: 18px;
+}
