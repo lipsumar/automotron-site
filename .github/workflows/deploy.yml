@@ -36,4 +36,5 @@ jobs:
           command_timeout: 5m
           script: |
             cd automotron-site
+            git pull
             docker-compose up -d
