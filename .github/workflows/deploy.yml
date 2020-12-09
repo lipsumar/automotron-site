@@ -24,6 +24,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           source: out/
           target: automotron-site/
+          rm: true
       - uses: appleboy/ssh-action@master
         name: Deploy via SSH
         with:
