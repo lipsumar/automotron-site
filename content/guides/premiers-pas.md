@@ -1,5 +1,6 @@
 ---
 title: Premiers pas
+sort: 1
 ---
 
 Dans ce guide, nous allons présenter l'interface et réaliser un générateur qui produira une phrase inspirée du film "La cité de la peur".

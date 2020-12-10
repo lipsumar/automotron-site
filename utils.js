@@ -8,10 +8,12 @@ const guidesDir = path.join(contentDir, "/guides");
 export function getGuides() {
   const guideFiles = fs.readdirSync(guidesDir);
 
-  return guideFiles.map((file) => {
-    const filepath = path.join(guidesDir, file);
-    return getPageByFilepath(filepath);
-  });
+  return guideFiles
+    .map((file) => {
+      const filepath = path.join(guidesDir, file);
+      return getPageByFilepath(filepath);
+    })
+    .sort((a, b) => a.attributes.sort - b.attributes.sort);
 }
 
 function getPageByFilepath(filepath) {
