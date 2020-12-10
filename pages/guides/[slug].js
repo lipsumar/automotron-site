@@ -24,11 +24,9 @@ export async function getStaticProps(ctx) {
 }
 
 export async function getStaticPaths() {
+  const guides = getGuides();
   return {
-    paths: [
-      { params: { slug: "premiers-pas" } },
-      { params: { slug: "fou-du-fafa" } },
-    ],
+    paths: guides.map((guide) => ({ params: { slug: guide.slug } })),
     fallback: false,
   };
 }
