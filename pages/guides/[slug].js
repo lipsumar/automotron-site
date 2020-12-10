@@ -4,7 +4,7 @@ import { getGuideBySlug, getGuides } from "../../utils";
 
 export default function Home({ guide, guides }) {
   return (
-    <Layout title="Documentation" guides={guides}>
+    <Layout title="Guides" guides={guides}>
       <h1>{guide.attributes.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: guide.contentHtml }}></div>
     </Layout>
