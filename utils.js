@@ -4,16 +4,25 @@ import marked from "marked";
 import fm from "front-matter";
 const contentDir = path.join(process.cwd(), "/content");
 const guidesDir = path.join(contentDir, "/guides");
+const docDir = path.join(contentDir, "/doc");
 
-export function getGuides() {
-  const guideFiles = fs.readdirSync(guidesDir);
+function getPages(dir) {
+  const guideFiles = fs.readdirSync(dir);
 
   return guideFiles
     .map((file) => {
-      const filepath = path.join(guidesDir, file);
+      const filepath = path.join(dir, file);
       return getPageByFilepath(filepath);
     })
     .sort((a, b) => a.attributes.sort - b.attributes.sort);
+}
+
+export function getGuides() {
+  return getPages(guidesDir);
+}
+
+export function getDocs() {
+  return getPages(docDir);
 }
 
 function getPageByFilepath(filepath) {
@@ -29,6 +38,10 @@ function getPageByFilepath(filepath) {
 
 export function getGuideBySlug(slug) {
   return getPageByFilepath(path.join(guidesDir, `${slug}.md`));
+}
+
+export function getDocBySlug(slug) {
+  return getPageByFilepath(path.join(docDir, `${slug}.md`));
 }
 
 export function getPage(slugpath) {

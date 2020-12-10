@@ -1,9 +1,9 @@
 import Layout from "../../components/Layout";
-import { getGuides } from "../../utils";
+import { getDocs, getGuides } from "../../utils";
 
-export default function Home({ guides }) {
+export default function Home({ guides, docs }) {
   return (
-    <Layout title="Documentation" guides={guides}>
+    <Layout title="Documentation" guides={guides} docs={docs}>
       index de la doc
     </Layout>
   );
@@ -11,9 +11,11 @@ export default function Home({ guides }) {
 
 export async function getStaticProps(ctx) {
   const guides = getGuides();
+  const docs = getDocs();
   return {
     props: {
-      guides: guides,
+      guides,
+      docs,
     },
   };
 }

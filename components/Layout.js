@@ -1,7 +1,7 @@
 import Link from "next/link";
 import LeftMenu from "./LeftMenu";
 
-export default function Layout({ children, title, guides }) {
+export default function Layout({ children, title, guides, docs }) {
   return (
     <>
       <div className="doc-header">
@@ -22,7 +22,7 @@ export default function Layout({ children, title, guides }) {
       <div className="container">
         <div className="doc-sidebar-layout">
           <div className="doc-sidebar-layout__sidebar">
-            <LeftMenu guides={guides} />
+            <LeftMenu guides={guides} docs={docs} />
           </div>
           <div className="doc-sidebar-layout__body">{children}</div>
         </div>

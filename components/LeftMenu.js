@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-export default function LeftMenu({ guides }) {
+export default function LeftMenu({ guides, docs }) {
   const router = useRouter();
   const guidesActive = router.route.match(/^\/guides/);
   const docActive = router.route.match(/^\/doc/);
@@ -19,6 +19,25 @@ export default function LeftMenu({ guides }) {
         <Link href="/doc" passHref>
           <a>Documentation</a>
         </Link>
+        {docActive && (
+          <div className="doc-left-submenu">
+            {docs.map((doc) => {
+              const guideActive = router.query.slug === doc.slug;
+              return (
+                <div
+                  className={`doc-left-submenu__item ${
+                    guideActive ? "doc-left-submenu__item--active" : ""
+                  }`}
+                  key={doc.slug}
+                >
+                  <Link href={`/doc/${doc.slug}`} passHref>
+                    <a>{doc.attributes.title}</a>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
       <div
         className={`doc-left-menu__item ${
