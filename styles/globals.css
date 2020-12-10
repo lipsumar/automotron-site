@@ -18,6 +18,12 @@ img{
   height: auto;
 }
 
+blockquote{
+  margin:0;
+  padding:0.05em 0 0.05em 1.3em;
+  border-left:2px solid var(--grey);
+  font-style: italic;
+}
 
 @import './variables.css';
 @import './doc-theme.css';

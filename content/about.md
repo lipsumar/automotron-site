@@ -1,3 +1,3 @@
 # About page
 
-its here
+L'automotron est un logiciel d'écriture numérique.
