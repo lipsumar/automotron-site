@@ -31,8 +31,51 @@
 
 
 .home-header-body{
-  padding:200px 0;
+  padding:30px 0;
   color:white;
   font-size:2em;
   text-align: center;
+}
+
+
+.home-section{
+  padding:100px 0;
+}
+.home-section h2{
+  font-size:41px;
+}
+.home-section h3{
+  font-size:24px;
+  font-weight: bold;
+}
+
+.home-section--yellow{
+  background-color: #ECE6CC;
+
+}
+.home-section--yellow h2{
+  color:var(--primary-dark);
+}
+
+
+.btn--home-example{
+  margin-right:0.6em;
+  margin-bottom:0.6em;
+  background-color: rgba(247,129,16,0.42);
+  border-color: transparent;
+  color:var(--primary-dark);
+}
+
+
+
+.home-section--primary-dark{
+  background-color: var(--primary-dark);
+  color:#fff;
+}
+.home-section--primary-dark h2{
+  color:#EDE7C9;
+}
+
+.home-section--primary-dark hr{
+  margin:70px 0;
 }

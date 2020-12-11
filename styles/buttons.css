@@ -5,7 +5,9 @@
   color:var(--secondary);
   font-size:1rem;
   padding:0.4em 0.6em;
-  display: inline;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-accent{

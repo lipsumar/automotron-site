@@ -2,10 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height:1.5;
   font-size:20px;
+  color:var(--text-color);
 }
 
 
@@ -16,6 +16,11 @@ body {
 img{
   max-width: 100%;
   height: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-top:0;
+  font-weight: normal;
 }
 
 blockquote{
@@ -31,6 +36,8 @@ blockquote{
 @import './grid.css';
 @import './cards.css';
 @import './buttons.css';
-@import './home.css'
+@import './home.css';
+@import './layout-media.css';
+@import './responsive-video.css';
 
 
