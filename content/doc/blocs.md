@@ -15,7 +15,7 @@ Les blocs sont la base de l'automotron. Ils contiennent des mots ou des phrases.
 
 Un bloc peut contenir un ou plusiers mots (ou phrases).
 
-![un ou plusieurs mots](/img/content/doc/un-ou-plusieurs.gif)
+![un ou plusieurs mots](/img/content/doc/un-ou-plusieurs.png)
 
 Lorsqu'un bloc contient plusieurs mots, un seul est choisi au hasard lorsque le texte est généré.
 
