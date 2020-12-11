@@ -1,26 +1,21 @@
 .doc-header{
-  padding-bottom:1.5em;
-  background: var(--primary);
-  background: linear-gradient(126deg, var(--primary-dark) 0%, var(--primary) 100%);
+  height:100px;
+  background: var(--primary-dark);
   color:white;
-}
-
-.doc-topbar{
-  padding:0.5em 0;
-  margin-bottom:3.5em;
-
   display: flex;
-}
-.doc-topbar a{
-  color:white;
+  align-items: center;
 }
 
-.doc-topbar__right{
-  margin-left:auto;
+.logo-title{
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-
-
-
+.logo-title__title{
+  font-size:38px;
+  margin-left:20px;
+  color:#EDE7C9;
+}
 
 
 /*************

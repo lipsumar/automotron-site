@@ -1,22 +1,27 @@
 import Link from "next/link";
 import LeftMenu from "./LeftMenu";
-
+import TopNav from "./TopNav";
 export default function Layout({ children, title, guides, docs }) {
   return (
     <>
       <div className="doc-header">
-        <div className="container">
-          <div className="doc-topbar">
-            <div className="doc-topbar__logo">
+        <div className="layout-media" style={{ padding: "0 3em" }}>
+          <div className="layout-media__media" style={{ marginRight: "auto" }}>
+            <div className="logo-title">
               <Link href="/" passHref>
-                <a>Automotron</a>
+                <a className="logo-title__logo">
+                  <img src="/img/site/logo_icon_guide.svg" />
+                </a>
               </Link>
-            </div>
-            <div className="doc-topbar__right">
-              <a href="/editor">Try it now</a>
+              <div className="logo-title__title">Aide &amp; Documentation</div>
             </div>
           </div>
-          <h1>{title}</h1>
+          <div
+            className="layout-media__body"
+            style={{ flexGrow: 0, display: "flex", alignItems: "center" }}
+          >
+            <TopNav />
+          </div>
         </div>
       </div>
       <div className="container">

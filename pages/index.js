@@ -7,14 +7,16 @@ export default function Home() {
   return (
     <>
       <div className="home-header">
-        <div className="container">
-          <div className="home-header-top">
-            <div className="home-header-top__logo">AUTOMOTRON</div>
-            <div className="home-header-top__nav">
-              <TopNav />
-            </div>
+        <div className="home-header-top">
+          <div className="home-header-top__logo">
+            <img src="/img/site/logo_complete_site.svg" />
           </div>
-          <div className="home-header-body">
+          <div className="home-header-top__nav">
+            <TopNav />
+          </div>
+        </div>
+        <div className="home-header-body">
+          <div className="container">
             <img src="/img/site/home-hero.png" />
           </div>
         </div>
