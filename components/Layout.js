@@ -5,8 +5,8 @@ export default function Layout({ children, title, guides, docs }) {
   return (
     <>
       <div className="doc-header">
-        <div className="layout-media" style={{ padding: "0 3em" }}>
-          <div className="layout-media__media" style={{ marginRight: "auto" }}>
+        <div className="doc-header__inner">
+          <div className="doc-header__left">
             <div className="logo-title">
               <Link href="/" passHref>
                 <a className="logo-title__logo">
@@ -17,12 +17,13 @@ export default function Layout({ children, title, guides, docs }) {
             </div>
           </div>
           <div
-            className="layout-media__body"
+            className="doc-header__right"
             style={{ flexGrow: 0, display: "flex", alignItems: "center" }}
           >
             <TopNav />
           </div>
         </div>
+        <div className="doc-header__mobile">Aide &amp; Documentation</div>
       </div>
       <div className="container">
         <div className="doc-sidebar-layout">

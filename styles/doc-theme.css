@@ -3,7 +3,18 @@
   background: var(--primary-dark);
   color:white;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.doc-header__inner{
+  display: flex;
+  padding:0 3rem;
   align-items: center;
+  justify-content: space-between;
+  width:100%;
+}
+.doc-header__mobile{
+  display:none;
 }
 
 .logo-title{
@@ -15,6 +26,28 @@
   font-size:38px;
   margin-left:20px;
   color:#EDE7C9;
+}
+@media (max-width:900px){
+  .doc-header{
+    height: 150px;
+  }
+  .logo-title__title{
+    display:none;
+  }
+  .doc-header__inner{
+    padding:0 1rem;
+  }
+  .doc-header__mobile{
+    display:block;
+    font-size: 32px;
+    margin-left:1rem;
+    color:#EDE7C9;
+  }
+}
+@media (max-width:400px){
+  .doc-header__mobile{
+    
+    font-size: 26px;}
 }
 
 
@@ -37,7 +70,25 @@
   padding-left: 100px;
 }
 
-
+@media (max-width: 992px){
+  .doc-sidebar-layout__body{
+    padding-left: 50px;
+  }
+}
+@media (max-width:600px){
+  .doc-sidebar-layout{display: block;}
+  .doc-sidebar-layout__sidebar{
+    border-right: 0;
+    width:100%;
+    padding-right: 0;
+    padding-top:20px;
+    padding-bottom:0px;
+  }
+  .doc-sidebar-layout__body{
+    padding-left: 0;
+    padding-top:50px;
+  }
+}
 
 
 /*************
@@ -46,22 +97,17 @@
 
 .doc-left-menu__item{
   border-bottom: 1px dashed var(--grey-lightest);
-  
-  
 }
 
 .doc-left-menu__item > a{
   display: block;
-  color:var(--grey);
+  color:var(--primary-dark);
   text-decoration: none;
   font-size: 1.3em;
-  padding: 1rem 1rem 1rem 0;
-}
-.doc-left-menu__item a:hover{
-  color:var(--grey-dark);
+  padding: 0.5rem 1rem 0.5rem 0;
 }
 .doc-left-menu__item--active > a{
-  color:var(--black);
+  font-weight: bold;
 }
 
 .doc-left-submenu{
@@ -72,11 +118,27 @@
   
 }
 .doc-left-submenu__item > a{
-  color:var(--grey);
+  color:var(--primary-dark);
   text-decoration: none;
   font-size: 1.1em;
 }
 .doc-left-submenu__item--active > a{
-  color:var(--black);
+  
   font-weight: bold;
 }
+.doc-left-menu--mobile{display:none}
+
+@media (max-width: 992px){
+  .doc-left-menu__item > a{
+    font-size:1rem;
+  }
+  .doc-left-submenu__item > a{
+    font-size: 0.8em;
+  }
+}
+@media (max-width:600px){
+  .doc-left-menu{display:none}
+  .doc-left-menu--mobile{display:block}
+  .doc-left-menu--mobile select{width:100%;font-size: 1em;}
+}
+
