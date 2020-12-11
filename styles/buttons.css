@@ -4,13 +4,13 @@
   border-radius: 3px;
   color:var(--secondary);
   font-size:1rem;
-  padding:0.4em 0.6em;
+  padding:0.4em 1em;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
 }
 
-.btn-accent{
+.btn-accent,a.btn-accent{
   background-color: var(--accent);
   color:white;
   border-color: var(--accent);

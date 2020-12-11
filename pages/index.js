@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Footer from "../components/Footer";
 import ResponsiveImage from "../components/ResponsiveImage";
+import TopNav from "../components/TopNav";
 
 export default function Home() {
   return (
@@ -9,24 +11,7 @@ export default function Home() {
           <div className="home-header-top">
             <div className="home-header-top__logo">AUTOMOTRON</div>
             <div className="home-header-top__nav">
-              <div className="home-header-top__nav-item">
-                <Link href="/about" passHref>
-                  <a>A propos</a>
-                </Link>
-              </div>
-              <div className="home-header-top__nav-item">
-                <Link href="/examples" passHref>
-                  <a>Exemples</a>
-                </Link>
-              </div>
-              <div className="home-header-top__nav-item">
-                <Link href="/doc" passHref>
-                  <a>Documentation</a>
-                </Link>
-              </div>
-              <div className="home-header-top__nav-item home-header-top__nav-item--btn">
-                <button class="btn btn-accent">Se connecter</button>
-              </div>
+              <TopNav />
             </div>
           </div>
           <div className="home-header-body">
@@ -169,6 +154,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

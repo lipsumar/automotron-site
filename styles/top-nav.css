@@ -1,0 +1,17 @@
+
+.top-nav{
+  display: flex;
+}
+.top-nav__item{
+  padding:0 0.5em;
+}
+.top-nav__item a{
+  color:var(--secondary);
+}
+.top-nav__item a.btn-accent{color:white}
+.top-nav__item--separator{
+  width:40px;
+}
+.top-nav__item--btn .btn{
+  margin-top:-7px;
+}

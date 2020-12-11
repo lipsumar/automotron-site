@@ -33,10 +33,12 @@ blockquote{
 @import './variables.css';
 @import './doc-theme.css';
 @import './container.css';
+@import './top-nav.css';
 @import './grid.css';
 @import './cards.css';
 @import './buttons.css';
 @import './home.css';
+@import './footer.css';
 @import './layout-media.css';
 @import './responsive-video.css';
 

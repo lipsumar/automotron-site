@@ -15,18 +15,6 @@
   font-size:40px;
 }
 
-.home-header-top__nav{
-  display: flex;
-}
-.home-header-top__nav-item{
-  padding:0 0.5em;
-}
-.home-header-top__nav-item a{
-  color:var(--secondary);
-}
-.home-header-top__nav-item--btn .btn{
-  margin-top:-3px;
-}
 
 
 
