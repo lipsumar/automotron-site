@@ -30,3 +30,12 @@ footer{
 .footer__col li{
   margin-bottom: 0.5em;
 }
+
+@media (max-width:1000px){
+  .footer {
+    display: block;
+  }
+  .footer__col{
+    margin-bottom:50px;
+  }
+}

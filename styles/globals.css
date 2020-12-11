@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+a{
+  color:var(--primary-dark);
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -32,6 +36,7 @@ blockquote{
 
 @import './variables.css';
 @import './doc-theme.css';
+@import './flex.css';
 @import './container.css';
 @import './top-nav.css';
 @import './grid.css';

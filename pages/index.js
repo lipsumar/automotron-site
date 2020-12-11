@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Footer from "../components/Footer";
-import ResponsiveImage from "../components/ResponsiveImage";
 import TopNav from "../components/TopNav";
 
 export default function Home() {
@@ -62,7 +61,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="home-section home-section--primary-dark">
+      <div className="home-section home-section--primary-dark home-section--features">
         <div className="container">
           <h2>Toutes sortes d’applications géniales</h2>
           <div
@@ -70,10 +69,9 @@ export default function Home() {
             style={{ marginBottom: 70 }}
           >
             <div className="layout-media__media">
-              <ResponsiveImage
-                src="/img/site/home-illustration.png"
-                width={400}
-              />
+              <div className="feature-img">
+                <img src="/img/site/home-illustration.png" />
+              </div>
             </div>
             <div className="layout-media__body">
               <h3>Un outil visuel simplifié</h3>
@@ -88,10 +86,9 @@ export default function Home() {
           </div>
           <div className="layout-media" style={{ marginBottom: 70 }}>
             <div className="layout-media__media">
-              <ResponsiveImage
-                src="/img/site/home-illustration.png"
-                width={400}
-              />
+              <div className="feature-img">
+                <img src="/img/site/home-illustration.png" />
+              </div>
             </div>
             <div className="layout-media__body">
               <h3>La gestion des accords</h3>
@@ -105,10 +102,9 @@ export default function Home() {
           </div>
           <div className="layout-media layout-media--inverted">
             <div className="layout-media__media">
-              <ResponsiveImage
-                src="/img/site/home-illustration.png"
-                width={400}
-              />
+              <div className="feature-img">
+                <img src="/img/site/home-illustration.png" />
+              </div>
             </div>
             <div className="layout-media__body">
               <h3>Partagez et exportez vos créations facilement</h3>
@@ -124,8 +120,13 @@ export default function Home() {
 
           <hr />
 
-          <div class="layout-media layout-media--inverted">
-            <div class="layout-media__media" style={{ flexBasis: 400 }}>
+          <div class="flex">
+            <div>
+              <h2>
+                En savoir d’avantage sur les fonctionalités de l’Automotron
+              </h2>
+            </div>
+            <div>
               <Link href="/guides/premiers-pas" passHref>
                 <a className="btn btn-accent" style={{ marginBottom: "1em" }}>
                   Tutoriel Premiers Pas
@@ -135,11 +136,6 @@ export default function Home() {
               <Link href="/doc" passHref>
                 <a className="btn">La documentation complète</a>
               </Link>
-            </div>
-            <div class="layout-media__body">
-              <h2>
-                En savoir d’avantage sur les fonctionalités de l’Automotron
-              </h2>
             </div>
           </div>
 
