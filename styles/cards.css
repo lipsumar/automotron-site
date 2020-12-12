@@ -4,6 +4,7 @@
   border:1px solid #d7e2ee;
   text-decoration: none;
   position: relative;
+  background-color: #fff;
 }
 
 .generator-card__delete{
@@ -28,4 +29,29 @@
   padding: 20px;
   color:initial;
   font-size: 18px;
+}
+
+.new-generator-card{
+  border-radius: 5px;
+  overflow: hidden;
+  border:1px solid #d7e2ee;
+  text-decoration: none;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-generator-card__body{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:100px;
+  min-height: 200px;
+}
+.new-generator-card__footer{
+  height:90px;
+  text-align: center;
+  padding:0 1em;
 }

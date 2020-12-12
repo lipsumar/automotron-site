@@ -4,11 +4,17 @@
   align-items: center;
   color:#fff;
 }
+.top-nav--light{
+  color:#333;
+}
 .top-nav__item{
   padding:0 0.5em;
 }
 .top-nav__item a{
   color:#EDE7C9;
+}
+.top-nav--light .top-nav__item a{
+  color:var(--primary-dark)
 }
 .top-nav__item a.btn-accent{color:white}
 .top-nav__item--separator{
@@ -36,6 +42,7 @@
   width:250px;
   padding:1em;
   box-shadow: 0 0 7px  rgba(0,0,0,0.2);
+  z-index:10;
 }
 .nav-mobile-menu__item{
   padding:5px 0;

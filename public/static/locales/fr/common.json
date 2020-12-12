@@ -30,5 +30,8 @@
       "email": "Email",
       "password": "Mot de passe"
     }
+  },
+  "myGenerators":{
+    "newGenerator": "Créer un nouveau générateur"
   }
 }

@@ -6,13 +6,13 @@ import useApi from "../hooks/useApi";
 import { FiUser } from "react-icons/fi";
 import LoggedInStatus from "./LoggedInStatus";
 
-export default function TopNav() {
+export default function TopNav({ variant }) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [loginModalOpen, setLoginModalOpen] = useState(false);
   const { data: user } = useApi("/logged-in", "post");
   return (
     <>
-      <div className="top-nav">
+      <div className={`top-nav top-nav--${variant}`}>
         <div className="top-nav__item">
           <Link href="/examples" passHref>
             <a>Exemples</a>
