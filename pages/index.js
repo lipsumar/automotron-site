@@ -165,29 +165,34 @@ export default function Home({ user }) {
 }
 
 export async function getServerSideProps(context) {
-  const cookieHeader = context.req.headers.cookie;
-  const cookies = cookie.parse(cookieHeader);
-  try {
-    const { data: loggedIn } = await axios.post(
-      `${process.env.NEXT_PUBLIC_API_BASE_URL}/logged-in`,
-      undefined,
-      {
-        headers: {
-          cookie: "connect.sid=" + cookies["connect.sid"],
-        },
-      }
-    );
-    return {
-      props: {
-        user: loggedIn,
-      },
-    };
-  } catch (err) {
-    return {
-      props: {
-        user: null,
-        error: err,
-      },
-    };
-  }
+  return {
+    props: {
+      user: null,
+    },
+  };
+  // const cookieHeader = context.req.headers.cookie;
+  // const cookies = cookie.parse(cookieHeader);
+  // try {
+  //   const { data: loggedIn } = await axios.post(
+  //     `${process.env.NEXT_PUBLIC_API_BASE_URL}/logged-in`,
+  //     undefined,
+  //     {
+  //       headers: {
+  //         cookie: "connect.sid=" + cookies["connect.sid"],
+  //       },
+  //     }
+  //   );
+  //   return {
+  //     props: {
+  //       user: loggedIn,
+  //     },
+  //   };
+  // } catch (err) {
+  //   return {
+  //     props: {
+  //       user: null,
+  //       error: err,
+  //     },
+  //   };
+  // }
 }
