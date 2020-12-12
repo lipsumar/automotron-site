@@ -166,8 +166,8 @@ export default function Home({ user }) {
 
 export async function getServerSideProps(context) {
   const cookieHeader = context.req.headers.cookie;
-  const cookies = cookie.parse(cookieHeader);
   try {
+    const cookies = cookie.parse(cookieHeader);
     const { data: loggedIn } = await axios.post(
       `${process.env.API_BASE_URL}/logged-in`,
       undefined,
