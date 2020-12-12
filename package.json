@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
+    "cookie": "^0.4.1",
     "email-validator": "^2.0.4",
     "front-matter": "^4.0.2",
     "marked": "^1.2.5",

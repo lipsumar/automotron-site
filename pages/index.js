@@ -1,8 +1,15 @@
 import Link from "next/link";
+import client from "../client";
 import Footer from "../components/Footer";
+import MyGenerators from "../components/my-generators";
 import TopNav from "../components/TopNav";
+import axios from "axios";
+import cookie from "cookie";
 
-export default function Home() {
+export default function Home({ user }) {
+  if (user) {
+    return <MyGenerators />;
+  }
   return (
     <>
       <div className="home-header">
@@ -155,4 +162,23 @@ export default function Home() {
       <Footer />
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  const cookieHeader = context.req.headers.cookie;
+  const cookies = cookie.parse(cookieHeader);
+  const { data: loggedIn } = await axios.post(
+    `${process.env.NEXT_PUBLIC_API_BASE_URL}/logged-in`,
+    undefined,
+    {
+      headers: {
+        cookie: "connect.sid=" + cookies["connect.sid"],
+      },
+    }
+  );
+  return {
+    props: {
+      user: loggedIn,
+    },
+  };
 }

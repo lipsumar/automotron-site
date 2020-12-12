@@ -1,7 +1,7 @@
-import GeneratorItem from "../components/GeneratorItem";
+import GeneratorItem from "./GeneratorItem";
 import useApi from "../hooks/useApi";
 
-export default function MyGeneratorsPage() {
+export default function MyGenerators() {
   const { data, error } = useApi("/generators/my");
 
   if (error && error.response && error.response.status === 401) {
