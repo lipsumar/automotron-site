@@ -169,7 +169,7 @@ export async function getServerSideProps(context) {
   const cookies = cookie.parse(cookieHeader);
   try {
     const { data: loggedIn } = await axios.post(
-      `${process.env.NEXT_PUBLIC_API_BASE_URL}/logged-in`,
+      `${process.env.API_BASE_URL}/logged-in`,
       undefined,
       {
         headers: {
