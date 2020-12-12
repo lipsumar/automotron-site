@@ -15,3 +15,10 @@
   color:white;
   border-color: var(--accent);
 }
+
+.btn--link{
+  border:none;
+  color:var(--primary-dark);
+  text-decoration: underline;
+  padding:0;
+}

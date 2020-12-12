@@ -1,12 +1,18 @@
 import Link from "next/link";
 import { useState } from "react";
 import MenuIcon from "./icons/MenuIcon";
+import LoginModal from "./LoginModal";
+import useApi from "../hooks/useApi";
+import { FiUser } from "react-icons/fi";
+import LoggedInStatus from "./LoggedInStatus";
 
 export default function TopNav() {
-  const [open, setOpen] = useState(false);
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const { data: user } = useApi("/logged-in", "post");
   return (
     <>
-      <div class="top-nav">
+      <div className="top-nav">
         <div className="top-nav__item">
           <Link href="/examples" passHref>
             <a>Exemples</a>
@@ -19,21 +25,41 @@ export default function TopNav() {
         </div>
         <div className="top-nav__item--separator"></div>
         <div className="top-nav__item">
-          <a href="#" class="btn">
-            Connection
-          </a>
+          {user ? (
+            <div className="logged-in-status-icon">
+              <LoggedInStatus user={user} />
+            </div>
+          ) : (
+            <a
+              href="#"
+              className="btn"
+              onClick={(e) => {
+                e.preventDefault();
+                setLoginModalOpen(true);
+              }}
+            >
+              Connexion
+            </a>
+          )}
         </div>
         <div className="top-nav__item">
-          <a href="/editor" class="btn btn-accent">
+          <a href="/editor" className="btn btn-accent">
             Essayer
           </a>
         </div>
       </div>
-      <div class={`top-nav-mobile ${open ? "top-nav-mobile--open" : ""}`}>
-        <a href="/editor" class="btn btn-accent btn-essayer-mobile">
+      <div
+        className={`top-nav-mobile ${
+          hamburgerOpen ? "top-nav-mobile--open" : ""
+        }`}
+      >
+        <a href="/editor" className="btn btn-accent btn-essayer-mobile">
           Essayer
         </a>
-        <div className="top-nav__hamburger" onClick={() => setOpen(!open)}>
+        <div
+          className="top-nav__hamburger"
+          onClick={() => setHamburgerOpen(!hamburgerOpen)}
+        >
           <MenuIcon />
         </div>
         <div className="nav-mobile">
@@ -50,13 +76,26 @@ export default function TopNav() {
             </div>
 
             <div className="nav-mobile-menu__item">
-              <a href="#" class="btn">
-                Connection
+              <a
+                href="#"
+                className="btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setHamburgerOpen(false);
+                  setLoginModalOpen(true);
+                }}
+              >
+                Connexion
               </a>
             </div>
           </div>
         </div>
       </div>
+      <LoginModal
+        isOpen={loginModalOpen}
+        onCloseRequest={() => setLoginModalOpen(false)}
+        onLoginSuccess={() => (window.location.href = "/")}
+      />
     </>
   );
 }

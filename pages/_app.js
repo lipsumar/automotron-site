@@ -1,6 +1,10 @@
 import Head from "next/head";
+import { appWithTranslation } from "../i18n";
 import "../styles/globals.css";
+import Modal from "react-modal";
+import App from "next/app";
 
+Modal.setAppElement("#__next");
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -47,4 +51,9 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+// required for i18n-next
+MyApp.getInitialProps = async (appContext) => ({
+  ...(await App.getInitialProps(appContext)),
+});
+
+export default appWithTranslation(MyApp);

@@ -6,11 +6,11 @@ const ax = axios.create({
   withCredentials: true,
 });
 
-export default function useApi(route) {
+export default function useApi(route, method = "get") {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   useEffect(() => {
-    ax.get(route)
+    ax[method](route)
       .then((resp) => {
         setData(resp.data);
       })

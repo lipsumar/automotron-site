@@ -2,11 +2,8 @@ version: "3"
 
 services:
   server:
-    image: nginx:alpine
+    build: .
     restart: always
-    volumes:
-      - ./out/out:/srv
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
     labels:
       - "traefik.http.routers.automotron-site.rule=Host(`automotron.io`)"
       - "traefik.http.routers.automotron-site.tls.certresolver=le"

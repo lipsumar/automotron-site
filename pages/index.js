@@ -43,17 +43,17 @@ export default function Home() {
               </p>
               <p>Quelques examples de générateurs</p>
               <div>
-                <button class="btn btn--home-example">
+                <button className="btn btn--home-example">
                   Des instructions de construction
                 </button>
-                <button class="btn btn--home-example">
+                <button className="btn btn--home-example">
                   Un itineraire de ballade
                 </button>
-                <button class="btn btn--home-example">
+                <button className="btn btn--home-example">
                   Une liste de course
                 </button>
-                <button class="btn btn--home-example">Un conte</button>
-                <button class="btn btn--home-example">
+                <button className="btn btn--home-example">Un conte</button>
+                <button className="btn btn--home-example">
                   Une recette expérimentale
                 </button>
               </div>
@@ -120,7 +120,7 @@ export default function Home() {
 
           <hr />
 
-          <div class="flex">
+          <div className="flex">
             <div>
               <h2>
                 En savoir d’avantage sur les fonctionalités de l’Automotron
