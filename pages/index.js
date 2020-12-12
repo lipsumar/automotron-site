@@ -168,6 +168,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       user: null,
+      post: `${process.env.NEXT_PUBLIC_API_BASE_URL}/logged-in`,
     },
   };
   // const cookieHeader = context.req.headers.cookie;
