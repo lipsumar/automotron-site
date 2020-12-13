@@ -16,6 +16,12 @@
   border-color: var(--accent);
 }
 
+.btn-primary{
+  background-color: var(--primary-dark);
+  color:#fff;
+  border-color: var(--primary-dark);
+}
+
 .btn--link{
   border:none;
   color:var(--primary-dark);

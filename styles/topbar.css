@@ -1,0 +1,36 @@
+.topbar{
+  background-color:var(--primary-dark);
+}
+
+
+.topbar-top{
+  padding-top:1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 3em;
+  height: 100px;
+}
+
+.topbar-top__logo{
+  color:var(--secondary);
+  font-size:40px;
+  line-height: 0;
+}
+@media (max-width:640px){
+  .topbar-top__logo{
+    width:200px
+  }
+  .topbar-top{
+    padding:0 1em;
+  }
+}
+
+
+
+.topbar-body{
+  padding:30px 0;
+  color:white;
+  font-size:2em;
+  text-align: center;
+}

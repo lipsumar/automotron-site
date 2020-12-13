@@ -2,9 +2,9 @@ import Link from "next/link";
 import client from "../client";
 import Footer from "../components/Footer";
 import MyGenerators from "../components/MyGenerators";
-import TopNav from "../components/TopNav";
 import axios from "axios";
 import cookie from "cookie";
+import TopBar from "../components/TopBar";
 
 export default function Home({ user }) {
   if (user) {
@@ -12,19 +12,10 @@ export default function Home({ user }) {
   }
   return (
     <>
-      <div className="home-header">
-        <div className="home-header-top">
-          <div className="home-header-top__logo">
-            <img src="/img/site/logo_complete_site.svg" />
-          </div>
-          <div className="home-header-top__nav">
-            <TopNav />
-          </div>
-        </div>
-        <div className="home-header-body">
-          <div className="container">
-            <img src="/img/site/home-hero.png" />
-          </div>
+      <TopBar />
+      <div className="home-section home-section--primary-dark">
+        <div className="container">
+          <img src="/img/site/home-hero.png" />
         </div>
       </div>
       <div className="home-section home-section--yellow">

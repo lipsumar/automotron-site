@@ -12,6 +12,9 @@
     "field": {
       "email": "Email",
       "password": "Mot de passe"
+    },
+    "link":{
+      "forgotPassword": "Mot de passe oublié?"
     }
   },
   "register": {
@@ -33,5 +36,25 @@
   },
   "myGenerators":{
     "newGenerator": "Créer un nouveau générateur"
+  },
+  "resetPassword": {
+    "title": "Mot de passe oublié",
+    "error":{
+      "invalidEmail":"L’email n’est pas valide",
+      "general": "Une erreur est survenue, veuillez réessayer plus tard",
+      "noAccount": "Il n’y a pas de compte pour cet email",
+      "passwordTooShort": "Le mot de passe est trop court",
+      "invalidToken":"Token invalide, veuillez réessayer"
+    },
+    "message":{
+      "emailSent": "Un email a été envoyé, vérifiez votre boite mail pour continuer."
+    },
+    "button":{
+      "continue": "Continuer"
+    },
+    "field": {
+      "email": "Email",
+      "newPassword": "Nouveau mot de passe"
+    }
   }
 }

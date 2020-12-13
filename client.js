@@ -20,4 +20,14 @@ export default {
   logout() {
     return ax.post(`/logout`).then((resp) => resp.data);
   },
+  requestResetPassword(email, language) {
+    return ax
+      .post(`/request-reset-password`, { email, language })
+      .then((resp) => resp.data);
+  },
+  resetPassword(token, newPassword) {
+    return ax
+      .post("/reset-password", { token, newPassword })
+      .then((resp) => resp.data);
+  },
 };
