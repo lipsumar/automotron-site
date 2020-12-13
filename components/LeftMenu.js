@@ -4,7 +4,8 @@ export default function LeftMenu({ guides, docs }) {
   const router = useRouter();
   const guidesActive = router.route.match(/^\/guides/);
   const docActive = router.route.match(/^\/doc/);
-  const { i18n } = useTranslation();
+  const exampleActive = router.route.match(/^\/examples/);
+  const { i18n, t } = useTranslation();
   const titleAttr = `title_${i18n.language}`;
   return (
     <>
@@ -37,7 +38,15 @@ export default function LeftMenu({ guides, docs }) {
             </div>
           )}
         </div>
-
+        <div
+          className={`doc-left-menu__item ${
+            exampleActive ? "doc-left-menu__item--active" : ""
+          }`}
+        >
+          <Link href="/examples" passHref>
+            <a>{t("doc.leftMenu.examples")}</a>
+          </Link>
+        </div>
         <div
           className={`doc-left-menu__item ${
             docActive ? "doc-left-menu__item--active" : ""

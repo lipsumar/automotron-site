@@ -62,5 +62,10 @@
   },
   "help":{
     "title": "Help & Documentation"
+  },
+  "doc":{
+    "leftMenu":{
+      "examples": "Examples"
+    }
   }
 }

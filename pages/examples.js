@@ -1,7 +1,9 @@
 import GeneratorItem from "../components/GeneratorItem";
+import Layout from "../components/Layout";
 import useApi from "../hooks/useApi";
+import { getDocs, getGuides } from "../utils";
 
-export default function MyGeneratorsPage() {
+export default function MyGeneratorsPage({ guides, docs }) {
   const { data, error } = useApi(
     `/generators/${process.env.NEXT_PUBLIC_EXAMPLE_IDS}`
   );
@@ -11,7 +13,7 @@ export default function MyGeneratorsPage() {
   }
 
   return (
-    <>
+    <Layout guides={guides} docs={docs}>
       <div className="container">
         <h1>Exemples</h1>
         {data ? (
@@ -24,6 +26,17 @@ export default function MyGeneratorsPage() {
           "Loading..."
         )}
       </div>
-    </>
+    </Layout>
   );
+}
+
+export async function getStaticProps(ctx) {
+  const guides = getGuides();
+  const docs = getDocs();
+  return {
+    props: {
+      guides,
+      docs,
+    },
+  };
 }
