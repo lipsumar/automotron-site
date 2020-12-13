@@ -1,4 +1,5 @@
 import { Link, useTranslation } from "../i18n";
+import Footer from "./Footer";
 import LeftMenu from "./LeftMenu";
 import TopNav from "./TopNav";
 export default function Layout({ children, title, guides, docs }) {
@@ -34,6 +35,7 @@ export default function Layout({ children, title, guides, docs }) {
           <div className="doc-sidebar-layout__body">{children}</div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
