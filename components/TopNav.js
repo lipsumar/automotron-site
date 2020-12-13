@@ -9,7 +9,7 @@ import { useTranslation, Link } from "../i18n";
 export default function TopNav({ variant }) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [loginModalOpen, setLoginModalOpen] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { data: user } = useApi("/logged-in", "post");
   return (
     <>
@@ -47,7 +47,10 @@ export default function TopNav({ variant }) {
           )}
         </div>
         <div className="top-nav__item">
-          <a href="/editor" className="btn btn-accent">
+          <a
+            href={`${i18n.language === "fr" ? "/fr" : ""}/editor`}
+            className="btn btn-accent"
+          >
             {t("topNav.tryNow")}
           </a>
         </div>
@@ -57,8 +60,11 @@ export default function TopNav({ variant }) {
           hamburgerOpen ? "top-nav-mobile--open" : ""
         }`}
       >
-        <a href="/editor" className="btn btn-accent btn-essayer-mobile">
-          Essayer
+        <a
+          href={`${i18n.language === "fr" ? "/fr" : ""}/editor`}
+          className="btn btn-accent btn-essayer-mobile"
+        >
+          {t("topNav.tryNow")}
         </a>
         <div
           className="top-nav__hamburger"
