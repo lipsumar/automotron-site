@@ -15,7 +15,7 @@ export default function AboutPage({ page }) {
 export async function getStaticProps() {
   return {
     props: {
-      page: getPage("a-propos"),
+      page: getPage("about"),
     },
   };
 }

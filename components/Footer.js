@@ -16,12 +16,12 @@ export default function Footer() {
             <h4>Le projet</h4>
             <ul>
               <li>
-                <Link href="/a-propos" passHref>
+                <Link href="/about" passHref>
                   <a>A propos du projet</a>
                 </Link>
               </li>
               <li>
-                <Link href="/equipe" passHref>
+                <Link href="/team" passHref>
                   <a>L’équipe</a>
                 </Link>
               </li>
@@ -41,7 +41,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/exemples" passHref>
+                <Link href="/examples" passHref>
                   <a>Exemples</a>
                 </Link>
               </li>
