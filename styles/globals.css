@@ -55,5 +55,6 @@ blockquote{
 @import './form.css';
 @import './logged-in-status.css';
 @import './logged-in-topbar.css';
+@import './language-switcher.css';
 
 

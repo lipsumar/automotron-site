@@ -1,12 +1,13 @@
-import Link from "next/link";
-import client from "../client";
+import { Link } from "../i18n";
 import Footer from "../components/Footer";
 import MyGenerators from "../components/MyGenerators";
 import axios from "axios";
 import cookie from "cookie";
 import TopBar from "../components/TopBar";
+import { useTranslation } from "../i18n";
 
 export default function Home({ user }) {
+  const { t } = useTranslation("home");
   if (user) {
     return <MyGenerators />;
   }
@@ -27,7 +28,7 @@ export default function Home({ user }) {
               </div>
             </div>
             <div className="layout-media__body">
-              <h2>Qu’est-ce que l'Automotron ?</h2>
+              <h2>{t("whatIsIt.title")}</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 ac dolor urna. Proin mattis, lorem id egestas aliquet, augue
@@ -125,7 +126,7 @@ export default function Home({ user }) {
               </h2>
             </div>
             <div>
-              <Link href="/guides/premiers-pas" passHref>
+              <Link href="/guides/getting-started" passHref>
                 <a className="btn btn-accent" style={{ marginBottom: "1em" }}>
                   Tutoriel Premiers Pas
                 </a>

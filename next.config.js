@@ -1,9 +1,11 @@
-//const { nextI18NextRewrites } = require('next-i18next/rewrites')
+const { nextI18NextRewrites } = require("next-i18next/rewrites");
 
-const localeSubpaths = {};
+const localeSubpaths = {
+  fr: "fr",
+};
 
 module.exports = {
-  //rewrites: async () => nextI18NextRewrites(localeSubpaths),
+  rewrites: async () => nextI18NextRewrites(localeSubpaths),
   publicRuntimeConfig: {
     localeSubpaths,
   },

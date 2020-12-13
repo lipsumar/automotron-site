@@ -1,4 +1,10 @@
 {
+  "topNav":{
+    "examples": "Exemples",
+    "documentation": "Documentation",
+    "login": "Connexion",
+    "tryNow": "Essayer"
+  },
   "login":{
     "title": "Connexion",
     "error": {

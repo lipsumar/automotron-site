@@ -1,27 +1,31 @@
-import Link from "next/link";
 import { useState } from "react";
 import MenuIcon from "./icons/MenuIcon";
 import LoginModal from "./LoginModal";
 import useApi from "../hooks/useApi";
-import { FiUser } from "react-icons/fi";
 import LoggedInStatus from "./LoggedInStatus";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation, Link } from "../i18n";
 
 export default function TopNav({ variant }) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const { t } = useTranslation();
   const { data: user } = useApi("/logged-in", "post");
   return (
     <>
       <div className={`top-nav top-nav--${variant}`}>
         <div className="top-nav__item">
           <Link href="/examples" passHref>
-            <a>Exemples</a>
+            <a>{t("topNav.examples")}</a>
           </Link>
         </div>
         <div className="top-nav__item">
           <Link href="/doc" passHref>
-            <a>Documentation</a>
+            <a>{t("topNav.documentation")}</a>
           </Link>
+        </div>
+        <div className="top-nav__item">
+          <LanguageSwitcher />
         </div>
         <div className="top-nav__item--separator"></div>
         <div className="top-nav__item">
@@ -38,13 +42,13 @@ export default function TopNav({ variant }) {
                 setLoginModalOpen(true);
               }}
             >
-              Connexion
+              {t("topNav.login")}
             </a>
           )}
         </div>
         <div className="top-nav__item">
           <a href="/editor" className="btn btn-accent">
-            Essayer
+            {t("topNav.tryNow")}
           </a>
         </div>
       </div>

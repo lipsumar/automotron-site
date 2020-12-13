@@ -1,7 +1,10 @@
 ---
-title: Les accords
+title_fr: Les accords
+title_en: Agreement
 sort: 3
 ---
+
+[[FR]]
 
 Dans ce guide, nous allons voir comment accorder des blocs entre eux. L'automotron n'a aucune connaissance du language, il n'accorde donc pas automatiquement, mais il est possible de définir des accords et l'automotron les respectera.
 
@@ -72,3 +75,7 @@ Il arrive que certains mots s'écrivent de la même manière au masculin et au f
 ## Pour aller plus loin
 
 Dans ce guide nous ne parlons que de l'accord en genre et en nombre. C'est l'accord le plus courant, mais l'automotron permet d'accorder bien plus, y compris des personnes (je,tu,il,...) ou même des rimes. Voir [la documentation complète des accords](/doc/accords).
+
+[[EN]]
+
+english version agreements

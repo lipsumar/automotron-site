@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "../i18n";
 
 export default function Footer() {
   return (
@@ -36,7 +36,7 @@ export default function Footer() {
             <h4>Assistance</h4>
             <ul>
               <li>
-                <Link href="/guides/premiers-pas" passHref>
+                <Link href="/guides/getting-started" passHref>
                   <a>Premiers pas</a>
                 </Link>
               </li>

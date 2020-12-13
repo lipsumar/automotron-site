@@ -1,11 +1,15 @@
 import Layout from "../../components/Layout";
+import { useTranslation } from "../../i18n";
 import { getDocBySlug, getDocs, getGuides } from "../../utils";
 
-export default function Home({ doc, guides, docs }) {
+export default function DocSlug({ doc, guides, docs }) {
+  const { i18n } = useTranslation();
   return (
     <Layout title="Documentation" guides={guides} docs={docs}>
       <h1>{doc.attributes.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: doc.contentHtml }}></div>
+      <div
+        dangerouslySetInnerHTML={{ __html: doc.contentHtml[i18n.language] }}
+      ></div>
     </Layout>
   );
 }

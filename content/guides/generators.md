@@ -1,7 +1,10 @@
 ---
-title: Les générateurs
+title_fr: Les générateurs
+title_en: Generators
 sort: 2
 ---
+
+[[FR]]
 
 Dans ce guide, nous allons explorer les accords. Pour ce faire, nous utiliserons comme exemple la phrase du guide [Premiers pas](/guides/premiers-pas) "On peut tromper une fois mille personnes mais on ne peut pas tromper mille fois une personne".
 
@@ -50,3 +53,7 @@ _Pour déplacer plusieurs blocs à la fois, maintenez `[Maj]` et dessinez un cad
 Ce générateur peut alors être connecté à un deuxième bloc pour obtenir ceci:
 
 ![Exemple final](/img/content/guides/les-generateurs/sans-repetition.png)
+
+[[EN]]
+
+eng version gen

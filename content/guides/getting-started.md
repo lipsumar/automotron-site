@@ -1,7 +1,10 @@
 ---
-title: Premiers pas
+title_fr: Premiers pas
+title_en: Getting started
 sort: 1
 ---
+
+[[FR]]
 
 Dans ce guide, nous allons présenter l'interface et réaliser un générateur qui produira une phrase inspirée du film "La cité de la peur".
 
@@ -85,3 +88,7 @@ Dans cet exemple, nous n'avons utilisé que les fonctionnalités les plus basiqu
   Plutôt que de répéter le mot "personne" une fois au singulier et au pluriel, il est possible d'accorder des blocs entre eux.
 - **[Les générateurs](/guides/les-generateurs)**  
   La version complète de cette phrase contient "une fois/mille fois" et "une personne/mille personnes" plusieurs fois. Plutôt que de répéter les blocs, il est possible de réutiliser des blocs ou des groupes de blocs grâce aux générateurs.
+
+[[EN]]
+
+Getting started, english version

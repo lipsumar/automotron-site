@@ -1,0 +1,30 @@
+.lang-switcher-wrapper{
+  position: relative;
+}
+.lang-switcher{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.lang-switcher > a{
+  margin-right: 5px;
+}
+
+.lang-switcher-dropdown{
+  padding:1em;
+  background-color: #fff;
+  box-shadow: 0 0 7px  rgba(0,0,0,0.2);
+  z-index:10;
+  border-radius: 5px;
+  width:250px;
+  color:#333;
+
+  position: absolute;
+  top:30px;
+  right:0;
+}
+
+.lang-switcher-dropdown a{
+  display: block;
+  color:var(--primary-dark);
+}

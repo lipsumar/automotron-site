@@ -1,6 +1,9 @@
 ---
-title: Exports
+title_fr: Exports
+title_en: Exports
 ---
+
+[[FR]]
 
 Il est possible d'exporter les générateurs. Utilisez le menu "Exporter" dans l'éditeur:
 
@@ -61,3 +64,7 @@ L'objet JSON contient `text` (le texte généré) et `result` (le détail de cha
   }
 }
 ```
+
+[[EN]]
+
+coming soon exports

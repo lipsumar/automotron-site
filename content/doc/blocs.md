@@ -1,6 +1,9 @@
 ---
-title: Blocs
+title_fr: Blocs
+title_en: Blocks
 ---
+
+[[FR]]
 
 - [Créer des blocs](#créer-des-blocs)
 - [Editer un bloc](#editer-un-bloc)
@@ -83,3 +86,7 @@ Une fois le bloc générateur gelé (il apparait avec un contour bleuté), il pr
 ## Retour à la ligne
 
 Pour faire un retour à la ligne, utilisez `\n`.
+
+[[EN]]
+
+blocs en

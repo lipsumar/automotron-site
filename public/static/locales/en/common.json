@@ -1,4 +1,10 @@
 {
+  "topNav":{
+    "examples": "Examples",
+    "documentation": "Documentation",
+    "login": "Login",
+    "tryNow": "Try now"
+  },
   "login":{
     "title": "Login",
     "error": {

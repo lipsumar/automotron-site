@@ -25,12 +25,26 @@ export function getDocs() {
   return getPages(docDir);
 }
 
+function getLocalizedBodies(bodies) {
+  const parts = bodies.split("[[EN]]");
+  return {
+    fr: parts[0].replace("[[FR]]", ""),
+    en: parts[1],
+  };
+}
+
 function getPageByFilepath(filepath) {
   const md = fs.readFileSync(filepath).toString();
   const parsed = fm(md);
+  const bodies = parsed.body;
+  const localized = getLocalizedBodies(bodies);
+  console.log(localized);
   return {
     filepath,
-    contentHtml: marked(parsed.body),
+    contentHtml: {
+      fr: marked(localized.fr),
+      en: marked(localized.en),
+    },
     attributes: parsed.attributes,
     slug: filepath.replace(/\.md$/, "").split("/").pop(),
   };
