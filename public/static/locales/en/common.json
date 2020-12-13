@@ -19,6 +19,48 @@
       "email": "Email",
       "password": "Password"
     }
+  },
+  "register": {
+    "title": "Create an account",
+    "error": {
+      "invalidEmail": "Invalid email",
+      "passwordTooShort": "Password too short",
+      "registerFailed": "An error occured",
+      "emailAlreadyExist": "An account already exists for this email"
+    },
+    "button": {
+      "createAccount": "Create an account",
+      "login": "Login"
+    },
+    "field": {
+      "email": "Email",
+      "password": "Password"
+    }
+  },
+  "myGenerators":{
+    "newGenerator": "New generator"
+  },
+  "resetPassword": {
+    "title": "Forgot password",
+    "error":{
+      "invalidEmail":"Invalid email",
+      "general": "An error occured, please try again later",
+      "noAccount": "There is no account for this email",
+      "passwordTooShort": "Password too short",
+      "invalidToken":"Invalid token, please try again"
+    },
+    "message":{
+      "emailSent": "An email has been sent, please check your mailbox to continue"
+    },
+    "button":{
+      "continue": "Continue"
+    },
+    "field": {
+      "email": "Email",
+      "newPassword": "New password"
+    }
+  },
+  "help":{
+    "title": "Help & Documentation"
   }
-  
 }

@@ -1,7 +1,8 @@
-import { Link } from "../i18n";
+import { Link, useTranslation } from "../i18n";
 import LeftMenu from "./LeftMenu";
 import TopNav from "./TopNav";
 export default function Layout({ children, title, guides, docs }) {
+  const { t } = useTranslation();
   return (
     <>
       <div className="doc-header">
@@ -13,7 +14,7 @@ export default function Layout({ children, title, guides, docs }) {
                   <img src="/img/site/logo_icon_guide.svg" />
                 </a>
               </Link>
-              <div className="logo-title__title">Aide &amp; Documentation</div>
+              <div className="logo-title__title">{t("help.title")}</div>
             </div>
           </div>
           <div
@@ -23,7 +24,7 @@ export default function Layout({ children, title, guides, docs }) {
             <TopNav />
           </div>
         </div>
-        <div className="doc-header__mobile">Aide &amp; Documentation</div>
+        <div className="doc-header__mobile">{t("help.title")}</div>
       </div>
       <div className="container">
         <div className="doc-sidebar-layout">
