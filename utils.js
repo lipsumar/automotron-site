@@ -38,7 +38,6 @@ function getPageByFilepath(filepath) {
   const parsed = fm(md);
   const bodies = parsed.body;
   const localized = getLocalizedBodies(bodies);
-  console.log(localized);
   return {
     filepath,
     contentHtml: {
