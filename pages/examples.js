@@ -14,18 +14,16 @@ export default function MyGeneratorsPage({ guides, docs }) {
 
   return (
     <Layout guides={guides} docs={docs}>
-      <div className="container">
-        <h1>Exemples</h1>
-        {data ? (
-          <div className="grid">
-            {data.map((generator) => (
-              <GeneratorItem generator={generator} />
-            ))}
-          </div>
-        ) : (
-          "Loading..."
-        )}
-      </div>
+      <h1>Exemples</h1>
+      {data ? (
+        <div className="grid">
+          {data.map((generator) => (
+            <GeneratorItem generator={generator} />
+          ))}
+        </div>
+      ) : (
+        "Loading..."
+      )}
     </Layout>
   );
 }
