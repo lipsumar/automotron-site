@@ -50,6 +50,7 @@ class Login extends React.Component {
               value={email}
               onChange={(e) => this.setState({ email: e.target.value })}
               ref={this.emailInputRef}
+              tabIndex="1"
             />
           </div>
           <div className="form__field">
@@ -65,6 +66,7 @@ class Login extends React.Component {
               type="password"
               value={password}
               onChange={(e) => this.setState({ password: e.target.value })}
+              tabIndex="2"
             />
           </div>
           <div className="form__action flex jc-sb ai-c">
@@ -74,6 +76,7 @@ class Login extends React.Component {
             <button
               className="btn btn--link"
               onClick={this.createAccount.bind(this)}
+              tabIndex="3"
             >
               {this.props.t("login.button.createAccount")}
             </button>
