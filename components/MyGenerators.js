@@ -2,7 +2,7 @@ import GeneratorItem from "./GeneratorItem";
 import useApi from "../hooks/useApi";
 import TopNav from "./TopNav";
 import { FiPlusCircle } from "react-icons/fi";
-import { useTranslation, withTranslation } from "../i18n";
+import { useTranslation } from "../i18n";
 
 function MyGenerators() {
   const { data, error } = useApi("/generators/my");
@@ -35,7 +35,7 @@ function MyGenerators() {
                 </div>
               </a>
               {data.map((generator) => (
-                <GeneratorItem generator={generator} />
+                <GeneratorItem generator={generator} key={generator._id} />
               ))}
             </div>
           ) : (
@@ -47,4 +47,4 @@ function MyGenerators() {
   );
 }
 
-export default withTranslation()(MyGenerators);
+export default MyGenerators;
