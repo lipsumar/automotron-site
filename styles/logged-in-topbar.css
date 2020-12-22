@@ -8,6 +8,6 @@
 }
 
 .body-under-topbar{
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 80px);
   background-color: #F6F5EA;
 }

@@ -23,7 +23,7 @@ function MyGenerators() {
         </div>
       </div>
       <div className="body-under-topbar">
-        <div className="container" style={{ paddingTop: 50 }}>
+        <div className="container" style={{ padding: "70px 0" }}>
           {data ? (
             <div className="grid">
               <a className="new-generator-card" href="/editor/new">
