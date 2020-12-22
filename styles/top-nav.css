@@ -12,6 +12,7 @@
 }
 .top-nav__item a{
   color:#EDE7C9;
+  font-size:18px;
 }
 .top-nav--light .top-nav__item a{
   color:var(--primary-dark)
