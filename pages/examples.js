@@ -1,12 +1,12 @@
 import GeneratorItem from "../components/GeneratorItem";
 import Layout from "../components/Layout";
 import useApi from "../hooks/useApi";
+import { useTranslation } from "../i18n";
 import { getDocs, getGuides } from "../utils";
 
 export default function MyGeneratorsPage({ guides, docs }) {
-  const { data, error } = useApi(
-    `/generators/${process.env.NEXT_PUBLIC_EXAMPLE_IDS}`
-  );
+  const { t } = useTranslation("examples");
+  const { data, error } = useApi(`/generators/${t("generatorIds")}`);
 
   if (error) {
     return <div>Error</div>;
@@ -14,7 +14,7 @@ export default function MyGeneratorsPage({ guides, docs }) {
 
   return (
     <Layout guides={guides} docs={docs}>
-      <h1>Exemples</h1>
+      <h1>{t("title")}</h1>
       {data ? (
         <div className="grid">
           {data.map((generator) => (

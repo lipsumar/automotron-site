@@ -2,7 +2,7 @@
   "whatIsIt":{
     "title": "Qu‘est-ce que l'Automotron?",
     "body": "L'automotron est un éditeur de texte génératif. Grâce à un language visuel, il permet de créer des générateurs de texte aléatoire facilement, sans besoin d'un language de programmation. Un générateur de texte aléatoire utilise des listes de mots, et connecte ces listes pour former des phrases — c'est aussi simple que ça.",
-    "examples": "Quelques examples de générateurs:"
+    "examples": "Quelques exemples de générateurs:"
   },
   "features":{
     "title": "Des fonctionalités simples et puissantes",

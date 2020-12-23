@@ -7,7 +7,7 @@ import TopBar from "../components/TopBar";
 import { useTranslation } from "../i18n";
 
 export default function Home({ user }) {
-  const { t } = useTranslation("home");
+  const { t, i18n } = useTranslation("home");
   if (user) {
     return <MyGenerators />;
   }
@@ -31,21 +31,53 @@ export default function Home({ user }) {
               <h2>{t("whatIsIt.title")}</h2>
               <p>{t("whatIsIt.body")}</p>
               <p>{t("whatIsIt.examples")}</p>
-              <div>
-                <button className="btn btn--home-example">
-                  Des instructions de construction
-                </button>
-                <button className="btn btn--home-example">
-                  Un itineraire de ballade
-                </button>
-                <button className="btn btn--home-example">
-                  Une liste de course
-                </button>
-                <button className="btn btn--home-example">Un conte</button>
-                <button className="btn btn--home-example">
-                  Une recette expérimentale
-                </button>
-              </div>
+              {i18n.language === "fr" && (
+                <div>
+                  <a
+                    href="https://automotron.io/editor/lvaTjhDqv"
+                    className="btn btn--home-example"
+                  >
+                    Des instructions de construction
+                  </a>
+                  {/* <button className="btn btn--home-example">
+                    Un itineraire de ballade
+                  </button>
+                  <button className="btn btn--home-example">
+                    Une liste de course
+                  </button> */}
+                  <a
+                    href="https://automotron.io/editor/zCEERErqd"
+                    className="btn btn--home-example"
+                  >
+                    Un conte
+                  </a>
+                  <a
+                    href="https://automotron.io/editor/yvyLHImkE"
+                    className="btn btn--home-example"
+                  >
+                    Un film de Noël
+                  </a>
+                  <a
+                    href="https://automotron.io/editor/IQkG8VFIK"
+                    className="btn btn--home-example"
+                  >
+                    Des règle des déconfinement
+                  </a>
+                  {/* <button className="btn btn--home-example">
+                    Une recette expérimentale
+                  </button> */}
+                </div>
+              )}
+              {i18n.language === "en" && (
+                <div>
+                  <a
+                    href="https://automotron.io/editor/QlHRDZtap"
+                    className="btn btn--home-example"
+                  >
+                    Manifesto
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
