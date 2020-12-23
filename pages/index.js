@@ -91,7 +91,7 @@ export default function Home({ user }) {
           >
             <div className="layout-media__media">
               <div className="feature-img">
-                <img src="/img/site/home-illustration.png" />
+                <img src="/img/site/feature-visual.png" />
               </div>
             </div>
             <div className="layout-media__body">
@@ -102,7 +102,7 @@ export default function Home({ user }) {
           <div className="layout-media" style={{ marginBottom: 70 }}>
             <div className="layout-media__media">
               <div className="feature-img">
-                <img src="/img/site/home-illustration.png" />
+                <img src="/img/site/feature-agreement.png" />
               </div>
             </div>
             <div className="layout-media__body">
@@ -113,7 +113,7 @@ export default function Home({ user }) {
           <div className="layout-media layout-media--inverted">
             <div className="layout-media__media">
               <div className="feature-img">
-                <img src="/img/site/home-illustration.png" />
+                <img src="/img/site/feature-export.png" />
               </div>
             </div>
             <div className="layout-media__body">
