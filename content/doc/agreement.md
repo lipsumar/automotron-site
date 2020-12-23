@@ -1,6 +1,7 @@
 ---
 title_fr: Accords
 title_en: Agreement
+sort: 2
 ---
 
 [[FR]]

@@ -1,6 +1,7 @@
 ---
 title_fr: Blocs
 title_en: Blocks
+sort: 1
 ---
 
 [[FR]]
