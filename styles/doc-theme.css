@@ -57,6 +57,7 @@
 
 .doc-sidebar-layout{
   display: flex;
+  min-height: 65vh;
 }
 .doc-sidebar-layout__sidebar{
   border-right: 1px solid var(--grey-light);
