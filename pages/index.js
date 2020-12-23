@@ -29,18 +29,8 @@ export default function Home({ user }) {
             </div>
             <div className="layout-media__body">
               <h2>{t("whatIsIt.title")}</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                ac dolor urna. Proin mattis, lorem id egestas aliquet, augue
-                neque pulvinar nisi, blandit dapibus tellus dolor vel sapien.
-                Nunc suscipit pretium volutpat. Nunc hendrerit rhoncus urna,
-                vitae vehicula tortor. Phasellus fermentum, turpis vel porta
-                vehicula, est tortor pretium felis, dignissim dictum mauris
-                massa vel purus. Ut aliquet non enim in finibus. Pellentesque
-                non augue congue, fermentum sapien in, egestas nisi. Fusce
-                feugiat placerat erat sed tincidunt.
-              </p>
-              <p>Quelques examples de générateurs</p>
+              <p>{t("whatIsIt.body")}</p>
+              <p>{t("whatIsIt.examples")}</p>
               <div>
                 <button className="btn btn--home-example">
                   Des instructions de construction
@@ -62,7 +52,7 @@ export default function Home({ user }) {
       </div>
       <div className="home-section home-section--primary-dark home-section--features">
         <div className="container">
-          <h2>Toutes sortes d’applications géniales</h2>
+          <h2>{t("features.title")}</h2>
           <div
             className="layout-media layout-media--inverted"
             style={{ marginBottom: 70 }}
@@ -73,14 +63,8 @@ export default function Home({ user }) {
               </div>
             </div>
             <div className="layout-media__body">
-              <h3>Un outil visuel simplifié</h3>
-              <p>
-                Pas besoin de code à apprendre. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Nullam ac dolor urna. Proin mattis,
-                lorem id egestas aliquet, augue neque pulvinar nisi, blandit
-                dapibus tellus dolor vel sapien. Nunc suscipit pretium volutpat.
-                Nunc hendrerit rhoncus urna, vitae vehicula tortor.
-              </p>
+              <h3>{t("features.visual.title")}</h3>
+              <p>{t("features.visual.body")}</p>
             </div>
           </div>
           <div className="layout-media" style={{ marginBottom: 70 }}>
@@ -90,13 +74,8 @@ export default function Home({ user }) {
               </div>
             </div>
             <div className="layout-media__body">
-              <h3>La gestion des accords</h3>
-              <p>
-                Automotron intègre un outil de gestion des accords qui vous
-                permettra de ipsum dolor sit amet, consectetur adipiscing elit.
-                Nullam ac dolor urna. Proin mattis, lorem id egestas aliquet,
-                augue neque pulvinar nisi, blandit dapi.
-              </p>
+              <h3>{t("features.agreement.title")}</h3>
+              <p>{t("features.agreement.body")}</p>
             </div>
           </div>
           <div className="layout-media layout-media--inverted">
@@ -106,14 +85,8 @@ export default function Home({ user }) {
               </div>
             </div>
             <div className="layout-media__body">
-              <h3>Partagez et exportez vos créations facilement</h3>
-              <p>
-                En deux clics, vous pouvez partager vos créations à vos amis. Ou
-                conectez les résultats de vos générateurs en utilisant leur url
-                fixe. Nullam ac dolor urna. Proin mattis, lorem id egestas
-                aliquet, augue neque pulvinar nisi, blandit dapibus tellus dolor
-                vel sapien.
-              </p>
+              <h3>{t("features.export.title")}</h3>
+              <p>{t("features.export.body")}</p>
             </div>
           </div>
 
@@ -121,19 +94,17 @@ export default function Home({ user }) {
 
           <div className="flex">
             <div>
-              <h2>
-                En savoir d’avantage sur les fonctionalités de l’Automotron
-              </h2>
+              <h2>{t("learnMore.title")}</h2>
             </div>
             <div>
               <Link href="/guides/getting-started" passHref>
                 <a className="btn btn-accent" style={{ marginBottom: "1em" }}>
-                  Tutoriel Premiers Pas
+                  {t("learnMore.gettingStarted")}
                 </a>
               </Link>
               <br />
               <Link href="/doc" passHref>
-                <a className="btn">La documentation complète</a>
+                <a className="btn">{t("learnMore.documentation")}</a>
               </Link>
             </div>
           </div>

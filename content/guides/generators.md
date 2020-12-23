@@ -6,7 +6,7 @@ sort: 2
 
 [[FR]]
 
-Dans ce guide, nous allons explorer les accords. Pour ce faire, nous utiliserons comme exemple la phrase du guide [Premiers pas](/guides/premiers-pas) "On peut tromper une fois mille personnes mais on ne peut pas tromper mille fois une personne".
+Dans ce guide, nous allons explorer les accords. Pour ce faire, nous utiliserons comme exemple la phrase du guide [Premiers pas](/guides/getting-started) "On peut tromper une fois mille personnes mais on ne peut pas tromper mille fois une personne".
 
 ## Pourquoi utiliser un générateur
 
@@ -56,4 +56,4 @@ Ce générateur peut alors être connecté à un deuxième bloc pour obtenir cec
 
 [[EN]]
 
-eng version gen
+Documentation is currently only available in french - english is coming soon.

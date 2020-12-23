@@ -74,8 +74,8 @@ Il arrive que certains mots s'écrivent de la même manière au masculin et au f
 
 ## Pour aller plus loin
 
-Dans ce guide nous ne parlons que de l'accord en genre et en nombre. C'est l'accord le plus courant, mais l'automotron permet d'accorder bien plus, y compris des personnes (je,tu,il,...) ou même des rimes. Voir [la documentation complète des accords](/doc/accords).
+Dans ce guide nous ne parlons que de l'accord en genre et en nombre. C'est l'accord le plus courant, mais l'automotron permet d'accorder bien plus, y compris des personnes (je,tu,il,...) ou même des rimes. Voir [la documentation complète des accords](/doc/agreement).
 
 [[EN]]
 
-english version agreements
+Documentation is currently only available in french - english is coming soon.

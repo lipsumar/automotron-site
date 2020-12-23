@@ -1,5 +1,27 @@
 {
   "whatIsIt":{
-    "title": "What is Automotron?"
+    "title": "What is Automotron?",
+    "body": "Automotron is a generative text editor. It allows to easily create random text generators using a visual language, no code required. A random text generator uses lists of words and connects them to make sentences — that's it!",
+    "examples": "Some examples of text generators:"
+  },
+  "features":{
+    "title": "Simple and powerful features",
+    "visual":{
+      "title": "A simplified visual language",
+      "body": "For the first time, a text generation tool that doesn't require code. Create blocks, connect them with cables to make sentences, that's it!"
+    },
+    "agreement":{
+      "title": "Agreements",
+      "body": "Automotron goes further by allowing to make blocks agree. Simple agreements like gender or number, but also anything else like rimes are possible with automotron",
+    },
+    "export":{
+      "title":"Export and share your creations",
+      "body": "Automotron allows to generate text, HTML or even emoji if you want to. Once your generator ready, you can export it in text, HTML or JSON — you get a link that's easy to share. It will soon be possible to style your exports (colors, fonts, ...) et even to create a Twitter bot!"
+    }
+  },
+  "learnMore":{
+    "title": "Learn more about Automotron",
+    "gettingStarted": "Getting Started Tutorial",
+    "documentation": "The complete documentation"
   }
 }

@@ -67,4 +67,4 @@ L'objet JSON contient `text` (le texte généré) et `result` (le détail de cha
 
 [[EN]]
 
-coming soon exports
+Documentation is currently only available in french - english is coming soon.

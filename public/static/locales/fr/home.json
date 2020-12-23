@@ -1,5 +1,27 @@
 {
   "whatIsIt":{
-    "title": "Qu‘est-ce que l'Automotron?"
+    "title": "Qu‘est-ce que l'Automotron?",
+    "body": "L'automotron est un éditeur de texte génératif. Grâce à un language visuel, il permet de créer des générateurs de texte aléatoire facilement, sans besoin d'un language de programmation. Un générateur de texte aléatoire utilise des listes de mots, et connecte ces listes pour former des phrases — c'est aussi simple que ça.",
+    "examples": "Quelques examples de générateurs:"
+  },
+  "features":{
+    "title": "Des fonctionalités simples et puissantes",
+    "visual":{
+      "title": "Un outil visuel simplifié",
+      "body": "Pour la première fois, un outil de génération de texte qui ne demande aucun code à apprendre. Créez des blocs et connectez-les ensemble à l'aide de câbles pour former des phrases, c'est tout!"
+    },
+    "agreement":{
+      "title": "La gestion des accords",
+      "body": "L'automotron va plus loin en permettant d'accorder des blocs entre eux. Il est difficile de créer un générateur de texte français sans avoir besoin d'accorder, c'est possible avec l'automotron. Du simple accord en genre/nombre, de la conjugaison ou même des rimes, tout peut s'accorder avec l'automotron!"
+    },
+    "export":{
+      "title":"Partagez et exportez vos créations facilement",
+      "body": "L'automotron permet de générer du texte, de l'HTML ou bien des emojis si vous voulez. Une fois votre générateur terminé, exportez le au format texte, HTML ou en JSON — vous obtenez une URL facile à partager. Il sera également bientôt possible de donner du style à vos exports (couleurs, police, ...) et même de créer un bot Twitter!"
+    }
+  },
+  "learnMore":{
+    "title": "En savoir d’avantage sur les fonctionalités de l’Automotron",
+    "gettingStarted": "Tutoriel Premiers Pas",
+    "documentation": "La documentation complète"
   }
 }

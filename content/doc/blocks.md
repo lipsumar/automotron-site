@@ -16,11 +16,11 @@ title_en: Blocks
 
 Les blocs sont la base de l'automotron. Ils contiennent des mots ou des phrases. Ces blocs peuvent être connectés ensemble pour former des phrases ou des textes.
 
-Un bloc peut contenir un ou plusiers mots (ou phrases).
+Un bloc peut contenir une ou plusiers lignes.
 
 ![un ou plusieurs mots](/img/content/doc/un-ou-plusieurs.png)
 
-Lorsqu'un bloc contient plusieurs mots, un seul est choisi au hasard lorsque le texte est généré.
+Lorsqu'un bloc contient plusieurs lignes, une seule est choisie au hasard lorsque le texte est généré.
 
 ## Créer des blocs
 
@@ -89,4 +89,4 @@ Pour faire un retour à la ligne, utilisez `\n`.
 
 [[EN]]
 
-blocs en
+Documentation is currently only available in french - english is coming soon.

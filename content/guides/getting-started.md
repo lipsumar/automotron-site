@@ -84,11 +84,11 @@ Notre générateur maintenant générer 4 phrases:
 
 Dans cet exemple, nous n'avons utilisé que les fonctionnalités les plus basique de l'automotron, mais il est possible d'aller plus loin:
 
-- **[Les accords](/guides/les-accords)**  
+- **[Les accords](/guides/agreement)**  
   Plutôt que de répéter le mot "personne" une fois au singulier et au pluriel, il est possible d'accorder des blocs entre eux.
-- **[Les générateurs](/guides/les-generateurs)**  
+- **[Les générateurs](/guides/generators)**  
   La version complète de cette phrase contient "une fois/mille fois" et "une personne/mille personnes" plusieurs fois. Plutôt que de répéter les blocs, il est possible de réutiliser des blocs ou des groupes de blocs grâce aux générateurs.
 
 [[EN]]
 
-Getting started, english version
+Documentation is currently only available in french - english is coming soon.
