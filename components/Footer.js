@@ -7,12 +7,9 @@ export default function Footer() {
         <div className="footer">
           <div className="footer__col">
             <h4>AUTOMOTRON</h4>
-            <p>
-              Un outil génial de génération de texte hyper utile pour créer des
-              listes de choses à faire avec ses amis un samedi soir
-            </p>
+            <p>Un language visuel pour créer des générateurs de texte</p>
           </div>
-          <div className="footer__col">
+          {/* <div className="footer__col">
             <h4>Le projet</h4>
             <ul>
               <li>
@@ -31,7 +28,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="footer__col">
             <h4>Assistance</h4>
             <ul>
@@ -52,7 +49,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer__col">
+          {/* <div className="footer__col">
             <h4>Communauté</h4>
             <ul>
               <li>
@@ -76,7 +73,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
