@@ -6,7 +6,7 @@ import { useTranslation } from "../i18n";
 
 function MyGenerators() {
   const { data, error } = useApi("/generators/my");
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   if (error && error.response && error.response.status === 401) {
     return <div>You must be logged-in</div>;
@@ -26,7 +26,10 @@ function MyGenerators() {
         <div className="container" style={{ padding: "70px 0" }}>
           {data ? (
             <div className="grid">
-              <a className="new-generator-card" href="/editor/new">
+              <a
+                className="new-generator-card"
+                href={i18n.language === "fr" ? "/fr/editor/new" : "/editor/new"}
+              >
                 <div className="new-generator-card__body">
                   <FiPlusCircle />
                 </div>
