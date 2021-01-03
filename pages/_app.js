@@ -45,6 +45,17 @@ function MyApp({ Component, pageProps }) {
           href="/favicon-512x512.png"
           sizes="512x512"
         ></link>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z12G2Z4XTJ"
+        ></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Z12G2Z4XTJ');`}
+        </script>
       </Head>
       <Component {...pageProps} />
     </>
