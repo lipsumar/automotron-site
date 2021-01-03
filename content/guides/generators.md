@@ -6,7 +6,7 @@ sort: 2
 
 [[FR]]
 
-Dans ce guide, nous allons explorer les accords. Pour ce faire, nous utiliserons comme exemple la phrase du guide [Premiers pas](/guides/getting-started) "On peut tromper une fois mille personnes mais on ne peut pas tromper mille fois une personne".
+Dans ce guide, nous allons explorer les générateurs. Pour ce faire, nous utiliserons comme exemple la phrase du guide [Premiers pas](/guides/getting-started) "On peut tromper une fois mille personnes mais on ne peut pas tromper mille fois une personne".
 
 ## Pourquoi utiliser un générateur
 
@@ -56,4 +56,38 @@ Ce générateur peut alors être connecté à un deuxième bloc pour obtenir cec
 
 [[EN]]
 
-Documentation is currently only available in french - english is coming soon.
+In this guide, we'll discover how to make use of generators to reuse blocks in multiple places.
+
+## Why use a generator
+
+A generator allows to re-use blocks. Here's an example that doesn't make use of generators:
+
+![Example with repeated blocks](/img/content/guides/generators/repetition.png)
+
+As you see, the list of names are the same and are repeated twice. Instead of repeating them, we can use a generator to only use one list.
+
+## Adding a generator
+
+Using the example above, we'll remove one of the list and detach the other so we can reuse it as a generator:
+
+![Detach](/img/content/guides/generators/detach.gif)
+
+Next, we connect the 2 empty boxes using "connect to generator":
+
+![Connect the generator](/img/content/guides/generators/connect-generator.gif)
+
+Any block can become a generator. Any other block can use a block as a generator. When a block is connected to a generator, that block will produce the text of the generator block it's connected to.
+
+In practice it allows to re-use lists multiple times in a sentence or large text.
+
+## Generators made of multiple blocks
+
+A generator can be made of multiple blocks.
+
+![Example with multiple blocks](/img/content/guides/generators/multiple.png)
+
+This example will produce sentences like:
+
+- A **nice potato** next to a **small banana**
+- A **nice orange** next to a **stinky banana**
+- A **small banana** next to a **stinky potato**
