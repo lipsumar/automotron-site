@@ -6,7 +6,7 @@ sort: 2
 
 [[FR]]
 
-L'automotron permet d'accorder des blocs entre eux. Pour une introduction au fonctionnement de base des accords, lisez d'abord le [guide des accords](/guides/agreement).
+L'automotron permet d'accorder des blocs entre eux. Pour une introduction au fonctionnement de base des accords, lisez d'abord le [guide des accords](/fr/guides/agreement).
 
 ## Marquer les accords
 
