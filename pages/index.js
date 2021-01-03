@@ -34,6 +34,12 @@ export default function Home({ user }) {
               {i18n.language === "fr" && (
                 <div>
                   <a
+                    href="https://automotron.io/editor/-waZtytuZ"
+                    className="btn btn--home-example"
+                  >
+                    Des bonnes résolutions
+                  </a>
+                  <a
                     href="https://automotron.io/editor/lvaTjhDqv"
                     className="btn btn--home-example"
                   >
