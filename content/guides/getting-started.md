@@ -159,7 +159,7 @@ Our generator can now produce 2 sentences:
 
 Let's also add a variation to the block "the kitchen":
 
-![Two variations](/img/content/guides/getting-started/2-variations.gif)
+![Two variations](/img/content/guides/getting-started/2-variations.png)
 
 Our generator can now produce 4 sentences:
 
