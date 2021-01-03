@@ -84,9 +84,9 @@ Notre générateur maintenant générer 4 phrases:
 
 Dans cet exemple, nous n'avons utilisé que les fonctionnalités les plus basique de l'automotron, mais il est possible d'aller plus loin:
 
-- **[Les générateurs](/guides/generators)**  
+- **[Les générateurs](/fr/guides/generators)**  
   La version complète de cette phrase contient "une fois/mille fois" et "une personne/mille personnes" plusieurs fois. Plutôt que de répéter les blocs, il est possible de réutiliser des blocs ou des groupes de blocs grâce aux générateurs.
-- **[Les accords](/guides/agreement)**  
+- **[Les accords](/fr/guides/agreement)**  
   Plutôt que de répéter le mot "personne" une fois au singulier et au pluriel, il est possible d'accorder des blocs entre eux.
 
 [[EN]]
@@ -117,7 +117,7 @@ You can navigate in the grid using the mouse, simply drag and drop the grid. To 
 
 To delete a block, right click on it and select "Delete"
 
-## Add text
+## Adding text
 
 We're going to create a generator that will produce the following sentences:
 
@@ -137,7 +137,7 @@ Then, add 2 other blocks like so:
 
 You can now click the "Run" button on the top-right. So far, our generator can only produce the sentence "Brian is in the kitchen".
 
-## Add variations
+## Adding variations
 
 This sentence won't always be the same (or it wouldn't be a text generator), it will vary to produce things like
 
