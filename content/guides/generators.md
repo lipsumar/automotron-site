@@ -6,7 +6,7 @@ sort: 2
 
 [[FR]]
 
-Dans ce guide, nous allons explorer les générateurs. Pour ce faire, nous utiliserons comme exemple la phrase du guide [Premiers pas](/guides/getting-started) "On peut tromper une fois mille personnes mais on ne peut pas tromper mille fois une personne".
+Dans ce guide, nous allons explorer les générateurs. Pour ce faire, nous utiliserons comme exemple la phrase du guide [Premiers pas](/fr/guides/getting-started) "On peut tromper une fois mille personnes mais on ne peut pas tromper mille fois une personne".
 
 ## Pourquoi utiliser un générateur
 

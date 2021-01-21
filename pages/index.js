@@ -67,7 +67,7 @@ export default function Home({ user }) {
                     href="https://automotron.io/editor/IQkG8VFIK"
                     className="btn btn--home-example"
                   >
-                    Des règle des déconfinement
+                    Des règle de déconfinement
                   </a>
                   {/* <button className="btn btn--home-example">
                     Une recette expérimentale
